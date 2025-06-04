@@ -13,7 +13,7 @@ public class Main {
         Integer option = -1;
 
         while(option != 0){
-            
+
             System.out.println("1 - Adicionar Livro");
             System.out.println("2 - Adicionar Autor");
             System.out.println("3 - Exibir Livros");
@@ -32,7 +32,6 @@ public class Main {
                 titulo = scan.nextLine();
 
                 System.out.println("Qual o Ano que foi publicado ?");
-                scan.nextLine();
                 anoPublicacao = scan.nextInt();
 
                 System.out.println("1) Autor Novo\n2) Selecionar Autor já existente");
@@ -69,7 +68,6 @@ public class Main {
                 }
 
                 System.out.println("O livro é\n1) Digital\n2) Físico");
-                scan.nextLine();
                 option = scan.nextInt();
 
                 if(option == 1){
@@ -115,17 +113,17 @@ public class Main {
 
                 if(option == 1){
                     for(int i = 0; i < atores.size(); i++ ){
-                        System.out.println("[" + i + "]" + biblioteca.get(i).toString());
+                        System.out.println("[" + i + "]" + biblioteca.get(i).exibirDetalhes());
                     }
                 }
                 else if(option == 2){
                     for(int i = 0; i < atores.size(); i++ ){
-                        System.out.println("[" + i + "]" + bibliotecaFisica.get(i).toString());
+                        System.out.println("[" + i + "]" + bibliotecaFisica.get(i).exibirDetalhes());
                     }
                 }
                 else if(option == 3){
                     for(int i = 0; i < atores.size(); i++ ){
-                        System.out.println("[" + i + "]" + bibliotecaDigital.get(i).toString());
+                        System.out.println("[" + i + "]" + bibliotecaDigital.get(i).exibirDetalhes());
                     }
                 }
             }

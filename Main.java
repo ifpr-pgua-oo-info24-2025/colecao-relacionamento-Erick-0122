@@ -13,6 +13,7 @@ public class Main {
         Integer option = -1;
 
         while(option != 0){
+            
             System.out.println("1 - Adicionar Livro");
             System.out.println("2 - Adicionar Autor");
             System.out.println("3 - Exibir Livros");
@@ -106,10 +107,12 @@ public class Main {
 
                 atores.add(autor);                
             }
+
             else if(option == 3){
                 System.out.println("1)Ver Todos os Livros\n2)Ver Todos os Livros Fisicos\n3)Ver Todos os Livros Digitais");
                 scan.nextLine();
                 option = scan.nextInt();
+
                 if(option == 1){
                     for(int i = 0; i < atores.size(); i++ ){
                         System.out.println("[" + i + "]" + biblioteca.get(i).toString());
@@ -126,6 +129,7 @@ public class Main {
                     }
                 }
             }
+
             else if(option == 4){
                     for(int i = 0; i < atores.size(); i++ ){
                         System.out.println("[" + i + "]" + atores.get(i).toString());

@@ -112,9 +112,16 @@ public class Main {
                 option = scan.nextInt();
 
                 if(option == 1){
-                    for(int i = 0; i < biblioteca.size(); i++ ){
-                        System.out.println("[" + i + "]" + biblioteca.get(i).exibirDetalhes());
+                    System.out.println("Livros Físicos : ");
+
+                    for(int i = 0; i < bibliotecaFisica.size(); i++ ){
+                        System.out.println("[" + i + "]" + bibliotecaFisica.get(i).exibirDetalhes());
                     }
+                    System.out.println("Livros Digitais : ");
+                     for(int i = 0; i < bibliotecaDigital.size(); i++ ){
+                        System.out.println("[" + i + "]" + bibliotecaDigital.get(i).exibirDetalhes());
+                    }
+                    
                 }
                 else if(option == 2){
                     for(int i = 0; i < bibliotecaFisica.size(); i++ ){

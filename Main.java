@@ -112,17 +112,17 @@ public class Main {
                 option = scan.nextInt();
 
                 if(option == 1){
-                    for(int i = 0; i < atores.size(); i++ ){
+                    for(int i = 0; i < biblioteca.size(); i++ ){
                         System.out.println("[" + i + "]" + biblioteca.get(i).exibirDetalhes());
                     }
                 }
                 else if(option == 2){
-                    for(int i = 0; i < atores.size(); i++ ){
+                    for(int i = 0; i < bibliotecaFisica.size(); i++ ){
                         System.out.println("[" + i + "]" + bibliotecaFisica.get(i).exibirDetalhes());
                     }
                 }
                 else if(option == 3){
-                    for(int i = 0; i < atores.size(); i++ ){
+                    for(int i = 0; i < bibliotecaDigital.size(); i++ ){
                         System.out.println("[" + i + "]" + bibliotecaDigital.get(i).exibirDetalhes());
                     }
                 }
